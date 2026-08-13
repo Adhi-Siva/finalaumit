@@ -25,14 +25,12 @@ export function Brand({ className, compact = false }: { className?: string; comp
         <span className="block truncate font-display text-base font-bold text-primary sm:text-lg">
           {site.company}
         </span>
-        {compact ? (
-          <span className="block truncate text-[0.62rem] tracking-[0.16em] text-muted-foreground uppercase">
-            AUM IT Training Institute
-          </span>
-        ) : (
-          <AumTagline className="block truncate text-[0.6rem] tracking-[0.12em] text-muted-foreground sm:text-[0.68rem]" />
-        )}
-
+       <AumTagline
+          className={cn(
+            "block truncate text-muted-foreground",
+            compact ? "text-[0.62rem] tracking-[0.1em] sm:text-[0.68rem]" : "text-[0.6rem] tracking-[0.12em] sm:text-[0.68rem]",
+          )}
+        />
       </span>
     </Link>
   );
