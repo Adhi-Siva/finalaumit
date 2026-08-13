@@ -16,14 +16,7 @@ const badges = [
 
 export function Hero() {
   const { openEnroll } = useEnroll();
-   <Reveal delay={60}>
-            <h2 className="mt-6 font-display text-xl font-bold tracking-[0.06em] text-primary uppercase sm:text-2xl">
-              AUM IT Training Institute
-            </h2>
-            <p className="mt-1 text-xs font-semibold tracking-[0.2em] text-muted-foreground uppercase sm:text-sm">
-              A Division of AUM Sol Corp
-            </p>
-          </Reveal>
+   
 
   return (
     <section id="home" className="bg-hero relative overflow-hidden pt-32 pb-20 lg:pt-40 lg:pb-28">
@@ -37,6 +30,14 @@ export function Hero() {
             <span className="inline-flex items-center gap-2 rounded-full border border-primary/40 bg-primary/10 px-4 py-1.5 text-[0.7rem] font-semibold tracking-[0.22em] text-primary">
               {site.anywhere}
             </span>
+          </Reveal>
+          <Reveal delay={60}>
+            <h2 className="mt-6 font-display text-xl font-bold tracking-[0.06em] text-primary uppercase sm:text-2xl">
+              AUM IT Training Institute
+            </h2>
+            <p className="mt-1 text-xs font-semibold tracking-[0.2em] text-muted-foreground uppercase sm:text-sm">
+              A Division of AUM Sol Corp
+            </p>
           </Reveal>
 
           <Reveal delay={80}>
@@ -105,7 +106,7 @@ export function Hero() {
               />
               <div className="absolute inset-x-0 bottom-0 flex items-center justify-center gap-3 bg-navy-deep/85 px-4 py-4 text-center backdrop-blur-md">
                 <img
-                  src={emblem.url}
+                  src={emblem}
                   alt=""
                   width={80}
                   height={80}
