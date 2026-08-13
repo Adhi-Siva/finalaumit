@@ -16,6 +16,14 @@ const badges = [
 
 export function Hero() {
   const { openEnroll } = useEnroll();
+   <Reveal delay={60}>
+            <h2 className="mt-6 font-display text-xl font-bold tracking-[0.06em] text-primary uppercase sm:text-2xl">
+              AUM IT Training Institute
+            </h2>
+            <p className="mt-1 text-xs font-semibold tracking-[0.2em] text-muted-foreground uppercase sm:text-sm">
+              A Division of AUM Sol Corp
+            </p>
+          </Reveal>
 
   return (
     <section id="home" className="bg-hero relative overflow-hidden pt-32 pb-20 lg:pt-40 lg:pb-28">
