@@ -34,7 +34,7 @@ export function Brand({
         <span
           className={
             compact
-              ? "block truncate text-[0.62rem] tracking-[0.16em] text-muted-foreground uppercase"
+              ? "block truncate text-[0.62rem] tracking-[0.16em] text-muted-foreground"
               : "block truncate text-[0.6rem] tracking-[0.12em] text-muted-foreground sm:text-[0.68rem]"
           }
         >
